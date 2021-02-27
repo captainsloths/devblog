@@ -40,9 +40,18 @@ export default function Layout({ children }) {
         to={`/about/`}
         css={css`
           float: right;
+          margin-left: 1.5em;
         `}
       >
         About
+      </Link>
+      <Link
+        to={`/contact/`}
+        css={css`
+          float: right;
+        `}
+      >
+        Contact
       </Link>
       {children}
     </div>
