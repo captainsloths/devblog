@@ -16,11 +16,11 @@ export default function Contact({ data }) {
         <input type="hidden" name="form-name" value="contact" />
         <label>
           Name
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" placeholder="John Smitty"/>
         </label>
         <label>
           Email
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" placeholder="jsmitty@place.holder"/>
         </label>
         <label>
           Subject
@@ -28,7 +28,7 @@ export default function Contact({ data }) {
         </label>
         <label>
           Message
-          <textarea name="message" id="message" rows="5" />
+          <textarea name="message" id="message" rows="5" cols="51" placeholder="Say hi."/>
         </label>
         <button type="submit">Send</button>
         <input type="reset" value="Clear" />
