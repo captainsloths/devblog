@@ -6,7 +6,14 @@ export default function Contact({ data }) {
   return (
     <Layout>
       <h1>Contact {data.site.siteMetadata.title}</h1>
-      <form method="post" action="#">
+      <form
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact"
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <label>
           Name
           <input type="text" name="name" id="name" />
@@ -31,11 +38,11 @@ export default function Contact({ data }) {
 }
 
 export const query = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
+  }
 `
