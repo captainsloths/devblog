@@ -1,5 +1,6 @@
 import React from "react"
-//import Button from 'react-bootstrap'
+//import Button from 'react-bootstrap/Button'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 import { css } from "@emotion/react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -46,13 +47,13 @@ export default function Contact({ data }) {
                 padding-bottom: 2px;
               `}
             >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="jsmitty@place.holder"
-              required="true"
-            />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="jsmitty@place.holder"
+                required="true"
+              />
             </div>
           </label>
 
@@ -63,7 +64,7 @@ export default function Contact({ data }) {
                 padding-bottom: 2px;
               `}
             >
-            <input type="text" name="subject" id="subject" required="true" />
+              <input type="text" name="subject" id="subject" required="true" />
             </div>
           </label>
           <div
@@ -82,8 +83,7 @@ export default function Contact({ data }) {
               />
             </label>
           </div>
-          <button type="submit">Send</button>
-          <input type="reset" value="Clear" />
+            <button type="submit">Send</button>
         </form>
       </div>
     </Layout>
