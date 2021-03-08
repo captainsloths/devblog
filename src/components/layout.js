@@ -37,6 +37,15 @@ export default function Layout({ children }) {
         </h3>
       </Link>
       <Link
+        to={`https://www.dropbox.com/s/13c11dlt9fm2lp1/Resume_Current.pdf?dl=0`}
+        css={css`
+            float: right;
+            margin-left: 1.5em;
+        `}
+      >
+        Resume
+      </Link>
+      <Link
         to={`/about/`}
         css={css`
           float: right;
